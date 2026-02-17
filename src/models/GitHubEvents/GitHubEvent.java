@@ -8,9 +8,9 @@ import java.time.OffsetDateTime;
  */
 public abstract class GitHubEvent {
     // Common properties
-    protected String type;
-    protected String repoName;
-    protected OffsetDateTime createdAt;
+    private String type;
+    private String repoName;
+    private OffsetDateTime createdAt;
 
     // Constructor
     public GitHubEvent(String _type, String _repoName, OffsetDateTime _createdAt) {

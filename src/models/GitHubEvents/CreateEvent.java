@@ -24,7 +24,7 @@ public class CreateEvent extends GitHubEvent {
     @Override
     public String toString() {
         if (refType == RefType.REPOSITORY) {
-            return "Created a new repository " + repoName;
+            return "Created a new repository " + this.getRepoName();
         }
         return "Created " + this.getRefType().toString() + " " + this.getRef() + " in " + this.getRepoName();
     }

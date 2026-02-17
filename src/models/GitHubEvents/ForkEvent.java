@@ -13,6 +13,6 @@ public class ForkEvent extends GitHubEvent {
 
     @Override
     public String toString() {
-        return "ForkEvent - Forked " + repoName + " to " + forkeeRepoName;
+        return "ForkEvent - Forked " + this.getRepoName() + " to " + this.getForkeeRepoName();
     }
 }
