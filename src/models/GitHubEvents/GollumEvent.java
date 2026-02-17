@@ -73,12 +73,15 @@ public class GollumEvent extends GitHubEvent {
         long edited = pages.stream().filter(p -> p.getAction() == PageAction.EDITED).count();
         String repoName = this.getRepoName();
 
+        String finalString = "GollumEvent - ";
         if (created > 0 && edited > 0) {
-            return "Created " + created + " and edited " + edited + " wiki pages in " + repoName;
+            finalString += "Created " + created + " and edited " + edited + " wiki pages in " + repoName;
         } else if (created > 0) {
-            return "Created " + created + " wiki page" + (created > 1 ? "s" : "") + " in " + repoName;
+            finalString += "Created " + created + " wiki page" + (created > 1 ? "s" : "") + " in " + repoName;
         } else {
-            return "Edited " + edited + " wiki page" + (edited > 1 ? "s" : "") + " in " + repoName;
+            finalString += "Edited " + edited + " wiki page" + (edited > 1 ? "s" : "") + " in " + repoName;
         }
+
+        return finalString;
     }
 }
