@@ -35,25 +35,28 @@ public class PullRequestEvent extends GitHubEvent {
     public String toString() {
         int pullReqNum = this.getNumber();
         String repoName = this.getRepoName();
+
+        String finalString = "PullRequestEvent - ";
         switch (action) {
             case OPENED:
-                return "Opened pull request #" + pullReqNum + " in " + repoName;
+                finalString += "Opened pull request #" + pullReqNum + " in " + repoName;
             case CLOSED:
-                return "Closed pull request #" + pullReqNum + " in " + repoName;
+                finalString += "Closed pull request #" + pullReqNum + " in " + repoName;
             case MERGED:
-                return "Merged pull request #" + pullReqNum + " in " + repoName;
+                finalString += "Merged pull request #" + pullReqNum + " in " + repoName;
             case REPOPENED:
-                return "Reopened pull request #" + pullReqNum + " in " + repoName;
+                finalString += "Reopened pull request #" + pullReqNum + " in " + repoName;
             case ASSIGNED:
-                return "Assigned pull request #" + pullReqNum + " in " + repoName;
+                finalString += "Assigned pull request #" + pullReqNum + " in " + repoName;
             case UNASSIGNED:
-                return "Unassigned pull request #" + pullReqNum + " in " + repoName;
+                finalString += "Unassigned pull request #" + pullReqNum + " in " + repoName;
             case LABELED:
-                return "Labeled pull request #" + pullReqNum + " in " + repoName;
+                finalString += "Labeled pull request #" + pullReqNum + " in " + repoName;
             case UNLABELED:
-                return "Unlabeled pull request #" + pullReqNum + " in " + repoName;
+                finalString += "Unlabeled pull request #" + pullReqNum + " in " + repoName;
             default:
-                return "Updated pull request #" + pullReqNum + " in " + repoName;
+                finalString += "Updated pull request #" + pullReqNum + " in " + repoName;
         }
+        return finalString;
     }
 }
