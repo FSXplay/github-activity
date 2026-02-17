@@ -6,8 +6,8 @@ public class PushEvent extends GitHubEvent {
     private int commitsCount;
     private String ref;
     
-    public PushEvent(String _repoName, int _commitsCount, String _ref) {
-        super("PushEvent", _repoName, OffsetDateTime.now());
+    public PushEvent(String _repoName, int _commitsCount, String _ref, OffsetDateTime _createdAt) {
+        super("PushEvent", _repoName, _createdAt);
         this.commitsCount = _commitsCount;
         this.ref = _ref;
     }
@@ -17,7 +17,7 @@ public class PushEvent extends GitHubEvent {
 
     @Override
     public String toString() {
-        String branch = ref.replace("refs/heads/", "");
-        return "Pushed " + commitsCount + " commit" + (commitsCount != 1 ? "s" : "") + " to " + repoName + " (" + branch + ")";
+        String branch = this.getRef().replace("refs/heads/", "");
+        return "Pushed " + this.getCommitsCount() + " commit" + (this.getCommitsCount() != 1 ? "s" : "") + " to " + this.getRepoName() + " (" + branch + ")";
     }
 }
