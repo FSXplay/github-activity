@@ -14,6 +14,6 @@ public class PullRequestReviewCommentEvent extends GitHubEvent {
 
     @Override
     public String toString() {
-        return "Commented on pull request #" + this.getNumber() + " in " + this.getRepoName();
+        return "PullRequestReviewCommentEvent - Commented on pull request #" + this.getNumber() + " in " + this.getRepoName();
     }
 }
