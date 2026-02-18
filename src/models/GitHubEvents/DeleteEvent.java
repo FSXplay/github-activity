@@ -7,6 +7,7 @@ public class DeleteEvent extends GitHubEvent {
         BRANCH,
         TAG
     }
+
     private RefType refType;
     private String ref;
 
