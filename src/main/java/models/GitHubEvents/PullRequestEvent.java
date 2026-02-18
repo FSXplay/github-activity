@@ -1,17 +1,7 @@
 package models.GitHubEvents;
 
 import java.time.OffsetDateTime;
-
-enum PullRequestAction {
-    OPENED,
-    CLOSED,
-    MERGED,
-    REPOPENED,
-    ASSIGNED,
-    UNASSIGNED,
-    LABELED,
-    UNLABELED
-}
+import models.GitHubEvents.enums.PullRequestAction;
 
 public class PullRequestEvent extends GitHubEvent {
     private PullRequestAction action;

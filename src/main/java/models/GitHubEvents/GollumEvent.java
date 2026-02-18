@@ -2,11 +2,7 @@ package models.GitHubEvents;
 
 import java.time.OffsetDateTime;
 import java.util.List;
-
-enum PageAction {
-    CREATED,
-    EDITED
-}
+import models.GitHubEvents.enums.PageAction;
 
 /**
  * Triggered when a wiki page is created or updated.

@@ -1,23 +1,19 @@
 package models.GitHubEvents;
 
 import java.time.OffsetDateTime;
+import models.GitHubEvents.enums.DeleteEventRefType;
 
 public class DeleteEvent extends GitHubEvent {
-    private enum RefType {
-        BRANCH,
-        TAG
-    }
-
-    private RefType refType;
+    private DeleteEventRefType refType;
     private String ref;
 
-    public DeleteEvent(String _repoName, OffsetDateTime _createdAt, RefType _refType, String _ref) {
+    public DeleteEvent(String _repoName, OffsetDateTime _createdAt, DeleteEventRefType _refType, String _ref) {
         super("DeleteEvent", _repoName, _createdAt);
         this.refType = _refType;
         this.ref = _ref;
     }
 
-    public RefType getRefType() {
+    public DeleteEventRefType getRefType() {
         return this.refType;
     }
 
