@@ -2,13 +2,12 @@ package models.GitHubEvents;
 
 import java.time.OffsetDateTime;
 
-enum RefType {
-    BRANCH,
-    TAG,
-    REPOSITORY
-}
-
 public class CreateEvent extends GitHubEvent {
+    private enum RefType {
+        BRANCH,
+        TAG,
+        REPOSITORY
+    }
     private String ref;
     private RefType refType;
 
