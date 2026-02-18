@@ -3,6 +3,7 @@ package services;
 import java.util.ArrayList;
 import java.util.List;
 
+import models.GitHubEvents.CreateEvent;
 import models.GitHubEvents.GitHubEvent;
 
 /**
@@ -33,7 +34,7 @@ public class JSONToGitHubEventConverter {
      * @return A GitHubEvent object.
      */
     public static GitHubEvent convertToGitHubEvent(String eventData) {
-
+        return new CreateEvent(eventData, null, null, eventData);
     }
 
     /**

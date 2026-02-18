@@ -7,7 +7,7 @@ import java.io.IOException;
 import services.JSONToGitHubEventConverter;
 
 public class Test_JSONToGitHubEventConverter {
-    private static final String FILE_PATH = "src/services/tests/testJSON.json";
+    private static final String FILE_PATH = "src/main/java/services/tests/testJSON.json";
 
     public static void main(String[] args) {
         test_convertToGitHubEvent();
