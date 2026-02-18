@@ -2,12 +2,11 @@ package models.GitHubEvents;
 
 import java.time.OffsetDateTime;
 
-enum RefType {
-    BRANCH,
-    TAG
-}
-
 public class DeleteEvent extends GitHubEvent {
+    private enum RefType {
+        BRANCH,
+        TAG
+    }
     private RefType refType;
     private String ref;
 
@@ -17,8 +16,13 @@ public class DeleteEvent extends GitHubEvent {
         this.ref = _ref;
     }
 
-    public RefType getRefType() { return this.refType; }
-    public String getRef() { return this.ref; }
+    public RefType getRefType() {
+        return this.refType;
+    }
+
+    public String getRef() {
+        return this.ref;
+    }
 
     @Override
     public String toString() {
