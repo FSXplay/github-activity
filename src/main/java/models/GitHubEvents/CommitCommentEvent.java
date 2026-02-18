@@ -6,9 +6,10 @@ public class CommitCommentEvent extends GitHubEvent {
     // TODO: More research and considerations on this!
     private String commitSHA;
     
-    public CommitCommentEvent(String _repoName, OffsetDateTime _createdAt) {
+    public CommitCommentEvent(String _repoName, OffsetDateTime _createdAt, String _commitSHA) {
         super("CommitCommentEvent", _repoName, _createdAt);
-    }
+        this.commitSHA = _commitSHA;
+    }   
 
     public String getCommitSHA() { return this.commitSHA; }
 
