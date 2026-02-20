@@ -3,7 +3,6 @@ package models.GitHubEvents;
 import java.time.OffsetDateTime;
 
 public class CommitCommentEvent extends GitHubEvent {
-    // TODO: More research and considerations on this!
     private String commitSHA;
     
     public CommitCommentEvent(String _repoName, OffsetDateTime _createdAt, String _commitSHA) {
