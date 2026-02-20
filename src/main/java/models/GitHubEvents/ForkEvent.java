@@ -7,6 +7,7 @@ public class ForkEvent extends GitHubEvent {
 
     public ForkEvent(String _repoName, String _forkeeRepoName, OffsetDateTime _createdAt) {
         super("ForkEvent", _repoName, _createdAt);
+        this.forkeeRepoName = _forkeeRepoName;
     }
 
     public String getForkeeRepoName() { return forkeeRepoName; }
