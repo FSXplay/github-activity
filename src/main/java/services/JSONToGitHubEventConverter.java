@@ -195,6 +195,7 @@ public class JSONToGitHubEventConverter {
     }
 
     private static PushEvent parsePushEvent(String owner, String repoName, OffsetDateTime createdAt, JSONObject payload) {
+        repoName = repoName.split("/", 2)[1]; // The API call only requires the repository name, therefore, remove the preceding owner name
         String head = payload.getString("head");
         String before = payload.getString("before");
         int commitsCount = GitHubClientAPI.compareTwoCommits(owner, repoName, before, head).getInt("total_commits");
