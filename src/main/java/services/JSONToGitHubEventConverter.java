@@ -190,9 +190,7 @@ public class JSONToGitHubEventConverter {
     }
 
     private static PullRequestReviewCommentEvent parsePullRequestReviewCommentEvent(String repoName, OffsetDateTime createdAt, JSONObject payload) {
-        int number = Integer.parseInt(
-            payload.getJSONObject("pull_request").getString("number")
-        );
+        int number = payload.getJSONObject("pull_request").getInt("number");
         return new PullRequestReviewCommentEvent(repoName, createdAt, number);
     }
 
