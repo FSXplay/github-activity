@@ -14,15 +14,7 @@ public class Test_JSONToGitHubEventConverter {
     }
 
     private static void test_convertToGitHubEvent() {
-        try {
-            String json = readJSONAsString(FILE_PATH);
-            json = json.substring(1, json.length() - 2).trim();
-            String firstEntry = JSONToGitHubEventConverter.splitJsonEntries(json)[0];
-            String type = extractValue(firstEntry, "\"type\"");
-            System.out.println(type);
-        } catch (IOException e) {
-            System.err.println("Error reading json file");
-        }
+        
     }
 
     // Helper methods
@@ -35,13 +27,5 @@ public class Test_JSONToGitHubEventConverter {
             }
         }
         return json.toString();
-    }
-
-    private static String extractValue(String json, String key) {
-        int keyIndex = json.indexOf(key);
-        int colonIndex = json.indexOf(":", keyIndex);
-        int startQuote = json.indexOf("\"", colonIndex);
-        int endQuote = json.indexOf("\"", startQuote + 1);
-        return json.substring(startQuote + 1, endQuote);
     }
 }
