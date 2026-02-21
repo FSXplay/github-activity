@@ -11,12 +11,12 @@ import java.util.List;
 import models.GitHubEvents.GitHubEvent;
 
 public class GitHubClientAPI {
-    private static final String API_URL = "https://api.github.com/users/%s/events";
+    private static final String API_URL = "https://api.github.com";
     private static HttpClient client = HttpClient.newHttpClient();
 
     public static List<GitHubEvent> getEvents(String username) {
         HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create(String.format(API_URL, username)))
+                .uri(URI.create(String.format(API_URL + "/users/%s/events", username)))
                 .GET()
                 .build();
 
