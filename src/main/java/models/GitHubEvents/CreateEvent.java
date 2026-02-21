@@ -4,11 +4,6 @@ import java.time.OffsetDateTime;
 import models.GitHubEvents.enums.CreateEventRefType;
 
 public class CreateEvent extends GitHubEvent {
-    private enum RefType {
-        BRANCH,
-        TAG,
-        REPOSITORY
-    }
     private String ref;
     private CreateEventRefType refType;
 

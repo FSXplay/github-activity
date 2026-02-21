@@ -7,7 +7,6 @@ models\GitHubEvents\CommitCommentEvent.class
 models\GitHubEvents\IssuesEvent.class
 models\GitHubEvents\MemberEvent.class
 models\GitHubEvents\PushEvent.class
-models\GitHubEvents\CreateEvent$RefType.class
 Main.class
 models\GitHubEvents\PullRequestReviewEvent$1.class
 api\APItest.class

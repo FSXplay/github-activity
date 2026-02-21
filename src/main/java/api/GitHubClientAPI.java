@@ -26,7 +26,7 @@ public class GitHubClientAPI {
             List<GitHubEvent> events = JSONToGitHubEventConverter.convertToGitHubEvents(response.body());
             return events;
         } catch (Exception e) {
-            System.err.println("Error response");
+            System.err.println("404 - Not Found!");
             return null;
         }
     }
