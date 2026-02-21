@@ -31,6 +31,6 @@ public class CreateEvent extends GitHubEvent {
         if (refType == CreateEventRefType.REPOSITORY) {
             return "Created a new repository " + this.getRepoName();
         }
-        return "Created " + this.getRefType().toString() + " " + this.getRef() + " in " + this.getRepoName();
+        return "CreateEvent - Created " + this.getRefType().toString() + " " + this.getRef() + " in " + this.getRepoName();
     }
 }

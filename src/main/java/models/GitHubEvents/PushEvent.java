@@ -18,6 +18,6 @@ public class PushEvent extends GitHubEvent {
     @Override
     public String toString() {
         String branch = this.getRef().replace("refs/heads/", "");
-        return "Pushed " + this.getCommitsCount() + " commit" + (this.getCommitsCount() != 1 ? "s" : "") + " to " + this.getRepoName() + " (" + branch + ")";
+        return "PushEvent - Pushed " + this.getCommitsCount() + " commit" + (this.getCommitsCount() != 1 ? "s" : "") + " to " + this.getRepoName() + " (" + branch + ")";
     }
 }

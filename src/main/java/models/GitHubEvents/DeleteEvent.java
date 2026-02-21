@@ -23,6 +23,6 @@ public class DeleteEvent extends GitHubEvent {
 
     @Override
     public String toString() {
-        return "Deleted " + this.getRefType().toString() + " " + this.getRef() + " from " + this.getRepoName();
+        return "DeleteEvent - Deleted " + this.getRefType().toString() + " " + this.getRef() + " from " + this.getRepoName();
     }
 }
