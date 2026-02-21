@@ -165,7 +165,7 @@ public class JSONToGitHubEventConverter {
     }
 
     private static MemberEvent parseMemberEvent(String repoName, OffsetDateTime createdAt, JSONObject payload) {
-        String loginUsername = payload.getString("login");
+        String loginUsername = payload.getJSONObject("member").getString("login");
         return new MemberEvent(repoName, createdAt, loginUsername);
     }
 
