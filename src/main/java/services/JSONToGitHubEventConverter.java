@@ -153,7 +153,7 @@ public class JSONToGitHubEventConverter {
     }
 
     private static IssueCommentEvent parseIssueCommentEvent(String repoName, OffsetDateTime createdAt, JSONObject payload) {
-        int issueNumber = Integer.parseInt(payload.getString("number"));
+        int issueNumber = payload.getJSONObject("issue").getInt("number");
         return new IssueCommentEvent(repoName, createdAt, issueNumber);
     }
 
