@@ -2,6 +2,8 @@
 
 A Java-based command-line interface (CLI) that fetches and displays the recent activity of a GitHub user in the terminal.
 
+Project URL: https://roadmap.sh/projects/github-user-activity
+
 ## Overview
 
 This project demonstrates working with APIs, JSON parsing, and building a CLI application. It fetches real-time activity data from the GitHub API and presents it in a readable format.
