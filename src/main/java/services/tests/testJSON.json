@@ -52,8 +52,8 @@
     "created_at": "2026-02-16T12:40:32Z"
   },
   {
-    "id": "8492506976",
-    "type": "CreateEvent",
+    "id": "8489101265",
+    "type": "PushEvent",
     "actor": {
       "id": 95726321,
       "login": "FSXplay",
@@ -63,19 +63,357 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/95726321?"
     },
     "repo": {
-      "id": 1159191850,
-      "name": "FSXplay/github-activity",
-      "url": "https://api.github.com/repos/FSXplay/github-activity"
+      "id": 1149360915,
+      "name": "FSXplay/roadmapsh-task-tracker-cli",
+      "url": "https://api.github.com/repos/FSXplay/roadmapsh-task-tracker-cli"
     },
     "payload": {
-      "ref": "main",
-      "ref_type": "branch",
-      "full_ref": "refs/heads/main",
-      "master_branch": "main",
-      "description": null,
-      "pusher_type": "user"
+      "repository_id": 1149360915,
+      "push_id": 30784067512,
+      "ref": "refs/heads/main",
+      "head": "9eeb5ea288d71d1de597af4601e151c329cd0ca0",
+      "before": "147d37e61f907e89d1316aec6ccb721343180f34"
     },
     "public": true,
-    "created_at": "2026-02-16T12:40:31Z"
+    "created_at": "2026-02-16T10:39:54Z"
+  },
+  {
+    "id": "6601978220",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 95726321,
+      "login": "FSXplay",
+      "display_login": "FSXplay",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/FSXplay",
+      "avatar_url": "https://avatars.githubusercontent.com/u/95726321?"
+    },
+    "repo": {
+      "id": 1149360915,
+      "name": "FSXplay/roadmapsh-task-tracker-cli",
+      "url": "https://api.github.com/repos/FSXplay/roadmapsh-task-tracker-cli"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 4,
+      "pull_request": {
+        "url": "https://api.github.com/repos/FSXplay/roadmapsh-task-tracker-cli/pulls/4",
+        "id": 3288150845,
+        "number": 4,
+        "head": {
+          "ref": "feature/package-as-jar",
+          "sha": "f5a5240b23f2bb60e283f527edda407842ef4d63",
+          "repo": {
+            "id": 1149360915,
+            "url": "https://api.github.com/repos/FSXplay/roadmapsh-task-tracker-cli",
+            "name": "roadmapsh-task-tracker-cli"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "ca2e8ec53e362c66895874e8e1e4450ce1e4023a",
+          "repo": {
+            "id": 1149360915,
+            "url": "https://api.github.com/repos/FSXplay/roadmapsh-task-tracker-cli",
+            "name": "roadmapsh-task-tracker-cli"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-02-16T03:08:11Z"
+  },
+  {
+    "id": "9000000001",
+    "type": "CommitCommentEvent",
+    "actor": {
+      "id": 95726321,
+      "login": "FSXplay",
+      "display_login": "FSXplay",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/FSXplay",
+      "avatar_url": "https://avatars.githubusercontent.com/u/95726321?"
+    },
+    "repo": {
+      "id": 1149360915,
+      "name": "FSXplay/roadmapsh-task-tracker-cli",
+      "url": "https://api.github.com/repos/FSXplay/roadmapsh-task-tracker-cli"
+    },
+    "payload": {
+      "commit_id": "aa218f56b14c9653891f9e74264a383fa43fefbd"
+    },
+    "public": true,
+    "created_at": "2026-02-17T09:00:00Z"
+  },
+  {
+    "id": "9000000002",
+    "type": "DiscussionEvent",
+    "actor": {
+      "id": 95726321,
+      "login": "FSXplay",
+      "display_login": "FSXplay",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/FSXplay",
+      "avatar_url": "https://avatars.githubusercontent.com/u/95726321?"
+    },
+    "repo": {
+      "id": 1149360915,
+      "name": "FSXplay/roadmapsh-task-tracker-cli",
+      "url": "https://api.github.com/repos/FSXplay/roadmapsh-task-tracker-cli"
+    },
+    "payload": {
+      "action": "created",
+      "discussion": {
+        "title": "How should we handle error logging?"
+      }
+    },
+    "public": true,
+    "created_at": "2026-02-17T09:01:00Z"
+  },
+  {
+    "id": "9000000003",
+    "type": "ForkEvent",
+    "actor": {
+      "id": 95726321,
+      "login": "FSXplay",
+      "display_login": "FSXplay",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/FSXplay",
+      "avatar_url": "https://avatars.githubusercontent.com/u/95726321?"
+    },
+    "repo": {
+      "id": 1149360915,
+      "name": "FSXplay/roadmapsh-task-tracker-cli",
+      "url": "https://api.github.com/repos/FSXplay/roadmapsh-task-tracker-cli"
+    },
+    "payload": {
+      "full_name": "FSXplay/roadmapsh-task-tracker-cli-fork"
+    },
+    "public": true,
+    "created_at": "2026-02-17T09:02:00Z"
+  },
+  {
+    "id": "9000000004",
+    "type": "GollumEvent",
+    "actor": {
+      "id": 95726321,
+      "login": "FSXplay",
+      "display_login": "FSXplay",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/FSXplay",
+      "avatar_url": "https://avatars.githubusercontent.com/u/95726321?"
+    },
+    "repo": {
+      "id": 1149360915,
+      "name": "FSXplay/roadmapsh-task-tracker-cli",
+      "url": "https://api.github.com/repos/FSXplay/roadmapsh-task-tracker-cli"
+    },
+    "payload": {
+      "pages": [
+        {
+          "page_name": "Home",
+          "title": "Home",
+          "summary": null,
+          "action": "created",
+          "sha": "aa218f56b14c9653891f9e74264a383fa43fefbd",
+          "html_url": "https://github.com/FSXplay/roadmapsh-task-tracker-cli/wiki/Home"
+        },
+        {
+          "page_name": "Setup",
+          "title": "Setup Guide",
+          "summary": "Added setup instructions",
+          "action": "edited",
+          "sha": "bb318f56b14c9653891f9e74264a383fa43fefbd",
+          "html_url": "https://github.com/FSXplay/roadmapsh-task-tracker-cli/wiki/Setup"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2026-02-17T09:03:00Z"
+  },
+  {
+    "id": "9000000005",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 95726321,
+      "login": "FSXplay",
+      "display_login": "FSXplay",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/FSXplay",
+      "avatar_url": "https://avatars.githubusercontent.com/u/95726321?"
+    },
+    "repo": {
+      "id": 1149360915,
+      "name": "FSXplay/roadmapsh-task-tracker-cli",
+      "url": "https://api.github.com/repos/FSXplay/roadmapsh-task-tracker-cli"
+    },
+    "payload": {
+      "action": "created",
+      "number": "5"
+    },
+    "public": true,
+    "created_at": "2026-02-17T09:04:00Z"
+  },
+  {
+    "id": "9000000006",
+    "type": "IssuesEvent",
+    "actor": {
+      "id": 95726321,
+      "login": "FSXplay",
+      "display_login": "FSXplay",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/FSXplay",
+      "avatar_url": "https://avatars.githubusercontent.com/u/95726321?"
+    },
+    "repo": {
+      "id": 1149360915,
+      "name": "FSXplay/roadmapsh-task-tracker-cli",
+      "url": "https://api.github.com/repos/FSXplay/roadmapsh-task-tracker-cli"
+    },
+    "payload": {
+      "action": "opened"
+    },
+    "public": true,
+    "created_at": "2026-02-17T09:05:00Z"
+  },
+  {
+    "id": "9000000007",
+    "type": "MemberEvent",
+    "actor": {
+      "id": 95726321,
+      "login": "FSXplay",
+      "display_login": "FSXplay",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/FSXplay",
+      "avatar_url": "https://avatars.githubusercontent.com/u/95726321?"
+    },
+    "repo": {
+      "id": 1149360915,
+      "name": "FSXplay/roadmapsh-task-tracker-cli",
+      "url": "https://api.github.com/repos/FSXplay/roadmapsh-task-tracker-cli"
+    },
+    "payload": {
+      "action": "added",
+      "login": "somecontributor"
+    },
+    "public": true,
+    "created_at": "2026-02-17T09:06:00Z"
+  },
+  {
+    "id": "9000000008",
+    "type": "PublicEvent",
+    "actor": {
+      "id": 95726321,
+      "login": "FSXplay",
+      "display_login": "FSXplay",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/FSXplay",
+      "avatar_url": "https://avatars.githubusercontent.com/u/95726321?"
+    },
+    "repo": {
+      "id": 1149360915,
+      "name": "FSXplay/roadmapsh-task-tracker-cli",
+      "url": "https://api.github.com/repos/FSXplay/roadmapsh-task-tracker-cli"
+    },
+    "payload": {},
+    "public": true,
+    "created_at": "2026-02-17T09:07:00Z"
+  },
+  {
+    "id": "9000000009",
+    "type": "PullRequestReviewEvent",
+    "actor": {
+      "id": 95726321,
+      "login": "FSXplay",
+      "display_login": "FSXplay",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/FSXplay",
+      "avatar_url": "https://avatars.githubusercontent.com/u/95726321?"
+    },
+    "repo": {
+      "id": 1149360915,
+      "name": "FSXplay/roadmapsh-task-tracker-cli",
+      "url": "https://api.github.com/repos/FSXplay/roadmapsh-task-tracker-cli"
+    },
+    "payload": {
+      "action": "submitted",
+      "pull_request": {
+        "number": "4"
+      }
+    },
+    "public": true,
+    "created_at": "2026-02-17T09:08:00Z"
+  },
+  {
+    "id": "9000000010",
+    "type": "PullRequestReviewCommentEvent",
+    "actor": {
+      "id": 95726321,
+      "login": "FSXplay",
+      "display_login": "FSXplay",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/FSXplay",
+      "avatar_url": "https://avatars.githubusercontent.com/u/95726321?"
+    },
+    "repo": {
+      "id": 1149360915,
+      "name": "FSXplay/roadmapsh-task-tracker-cli",
+      "url": "https://api.github.com/repos/FSXplay/roadmapsh-task-tracker-cli"
+    },
+    "payload": {
+      "action": "created",
+      "pull_request": {
+        "number": "4"
+      }
+    },
+    "public": true,
+    "created_at": "2026-02-17T09:09:00Z"
+  },
+  {
+    "id": "9000000011",
+    "type": "ReleaseEvent",
+    "actor": {
+      "id": 95726321,
+      "login": "FSXplay",
+      "display_login": "FSXplay",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/FSXplay",
+      "avatar_url": "https://avatars.githubusercontent.com/u/95726321?"
+    },
+    "repo": {
+      "id": 1149360915,
+      "name": "FSXplay/roadmapsh-task-tracker-cli",
+      "url": "https://api.github.com/repos/FSXplay/roadmapsh-task-tracker-cli"
+    },
+    "payload": {
+      "action": "published",
+      "release": {
+        "name": "v1.0.0"
+      }
+    },
+    "public": true,
+    "created_at": "2026-02-17T09:10:00Z"
+  },
+  {
+    "id": "9000000012",
+    "type": "WatchEvent",
+    "actor": {
+      "id": 95726321,
+      "login": "FSXplay",
+      "display_login": "FSXplay",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/FSXplay",
+      "avatar_url": "https://avatars.githubusercontent.com/u/95726321?"
+    },
+    "repo": {
+      "id": 1149360915,
+      "name": "FSXplay/roadmapsh-task-tracker-cli",
+      "url": "https://api.github.com/repos/FSXplay/roadmapsh-task-tracker-cli"
+    },
+    "payload": {
+      "action": "started"
+    },
+    "public": true,
+    "created_at": "2026-02-17T09:11:00Z"
   }
 ]
