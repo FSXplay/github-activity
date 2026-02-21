@@ -115,7 +115,7 @@ public class JSONToGitHubEventConverter {
     }
 
     private static ForkEvent parseForkEvent(String repoName, OffsetDateTime createdAt, JSONObject payload) {
-        String forkeeRepoName = payload.getString("full_name");
+        String forkeeRepoName = payload.getJSONObject("forkee").getString("full_name");
         return new ForkEvent(repoName, forkeeRepoName, createdAt);
     }
 
