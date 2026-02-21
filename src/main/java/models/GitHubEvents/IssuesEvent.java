@@ -1,12 +1,7 @@
 package models.GitHubEvents;
 
 import java.time.OffsetDateTime;
-
-enum IssueAction {
-    OPENED,
-    CLOSED,
-    REOPENED
-}
+import models.GitHubEvents.enums.IssueAction;
 
 public class IssuesEvent extends GitHubEvent {
     private IssueAction action;
