@@ -26,27 +26,37 @@ public class PullRequestEvent extends GitHubEvent {
         int pullReqNum = this.getNumber();
         String repoName = this.getRepoName();
 
-        String finalString = "PullRequestEvent - ";
+        String verb;
         switch (action) {
             case OPENED:
-                finalString += "Opened pull request #" + pullReqNum + " in " + repoName;
+                verb = "Opened";
+                break;
             case CLOSED:
-                finalString += "Closed pull request #" + pullReqNum + " in " + repoName;
+                verb = "Closed";
+                break;
             case MERGED:
-                finalString += "Merged pull request #" + pullReqNum + " in " + repoName;
+                verb = "Merged";
+                break;
             case REPOPENED:
-                finalString += "Reopened pull request #" + pullReqNum + " in " + repoName;
+                verb = "Reopened";
+                break;
             case ASSIGNED:
-                finalString += "Assigned pull request #" + pullReqNum + " in " + repoName;
+                verb = "Assigned";
+                break;
             case UNASSIGNED:
-                finalString += "Unassigned pull request #" + pullReqNum + " in " + repoName;
+                verb = "Unassigned";
+                break;
             case LABELED:
-                finalString += "Labeled pull request #" + pullReqNum + " in " + repoName;
+                verb = "Labeled";
+                break;
             case UNLABELED:
-                finalString += "Unlabeled pull request #" + pullReqNum + " in " + repoName;
+                verb = "Unlabeled";
+                break;
             default:
-                finalString += "Updated pull request #" + pullReqNum + " in " + repoName;
+                verb = "Updated";
+                break;
         }
-        return finalString;
+
+        return "PullRequestEvent - " + verb + " pull request #" + pullReqNum + " in " + repoName;
     }
 }
