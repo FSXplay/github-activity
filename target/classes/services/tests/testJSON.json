@@ -1,0 +1,81 @@
+[
+  {
+    "id": "8524314992",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 95726321,
+      "login": "FSXplay",
+      "display_login": "FSXplay",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/FSXplay",
+      "avatar_url": "https://avatars.githubusercontent.com/u/95726321?"
+    },
+    "repo": {
+      "id": 1159191850,
+      "name": "FSXplay/github-activity",
+      "url": "https://api.github.com/repos/FSXplay/github-activity"
+    },
+    "payload": {
+      "ref": "feature/fetch-github-api",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/feature/fetch-github-api",
+      "master_branch": "main",
+      "description": null,
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-02-17T11:44:12Z"
+  },
+  {
+    "id": "8492507440",
+    "type": "DeleteEvent",
+    "actor": {
+      "id": 95726321,
+      "login": "FSXplay",
+      "display_login": "FSXplay",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/FSXplay",
+      "avatar_url": "https://avatars.githubusercontent.com/u/95726321?"
+    },
+    "repo": {
+      "id": 1159191850,
+      "name": "FSXplay/github-activity",
+      "url": "https://api.github.com/repos/FSXplay/github-activity"
+    },
+    "payload": {
+      "ref": "master",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/master",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-02-16T12:40:32Z"
+  },
+  {
+    "id": "8492506976",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 95726321,
+      "login": "FSXplay",
+      "display_login": "FSXplay",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/FSXplay",
+      "avatar_url": "https://avatars.githubusercontent.com/u/95726321?"
+    },
+    "repo": {
+      "id": 1159191850,
+      "name": "FSXplay/github-activity",
+      "url": "https://api.github.com/repos/FSXplay/github-activity"
+    },
+    "payload": {
+      "ref": "main",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/main",
+      "master_branch": "main",
+      "description": null,
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-02-16T12:40:31Z"
+  }
+]
