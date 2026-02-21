@@ -15,6 +15,8 @@ public class Main {
 
         List<GitHubEvent> events = GitHubClientAPI.getEvents(username);
         
+        if (events == null) return;
+
         System.out.println(username + " activities on GitHub:");
         for (GitHubEvent event : events) {
             System.out.println(event);
