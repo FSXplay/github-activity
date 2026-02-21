@@ -177,7 +177,7 @@ public class JSONToGitHubEventConverter {
         PullRequestAction action = PullRequestAction.valueOf(
             payload.getString("action").toUpperCase()
         );
-        int number = Integer.parseInt(payload.getString("number"));
+        int number = payload.getInt("number");
         return new PullRequestEvent(repoName, createdAt, action, number);
     }
 
