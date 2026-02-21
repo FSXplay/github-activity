@@ -91,7 +91,7 @@ public class JSONToGitHubEventConverter {
     // Helper methods for parsing values into different types of GitHubEvent objects
     private static CommitCommentEvent parseCommitCommentEvent(String repoName, OffsetDateTime createdAt,
             JSONObject payload) {
-        String commitSHA = payload.getString("commit_id");
+        String commitSHA = payload.getJSONObject("comment").getString("commit_id");
         return new CommitCommentEvent(repoName, createdAt, commitSHA);
     }
 
